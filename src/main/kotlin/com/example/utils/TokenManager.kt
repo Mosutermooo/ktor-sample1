@@ -15,7 +15,6 @@ class TokenManager(private val config: HoconApplicationConfig) {
     private val expirationDate = System.currentTimeMillis() + 600000
 
     fun generateJWTToken(user: User): String? {
-
         return JWT.create().withAudience(audience)
             .withIssuer(issuer)
             .withClaim("username", user.username)

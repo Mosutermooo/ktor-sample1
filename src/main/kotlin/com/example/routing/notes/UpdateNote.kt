@@ -74,7 +74,7 @@ fun Routing.updateNote(){
                     )
 
                 }
-                
+
             }else{
                 call.respond(
                     HttpStatusCode.NotAcceptable,
